@@ -5,6 +5,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Welcome extends Application
 {
 
+	function __construct()
+	{
+		parent::__construct();
+		$this->load->model('Menu');
+		$this->data['pagetitle'] = 'Atrexa Bar';
+	}
+
+
 	/**
 	 * Index Page for this controller.
 	 *
@@ -18,14 +26,10 @@ class Welcome extends Application
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index() {
-		$result = '';
-		$oddrow = true;
-		foreach ($this->Categories->all() as $category) {
-			$category->direction = ($oddrow ? 'left' : 'right');
-			$result .= $this->parser->parse('category-home', $category, true);
-			$oddrow = ! $oddrow;
-		}
-		$this->data['content'] = $result;
+		$this->load->helper('formfields');
+		$this->data['title'] = 'Atrexa Bar (Server)';
+		$this->data['pagebody'] = 'Welcome to Atrexa Bar';
+
 		$this->render();
 	}
 
