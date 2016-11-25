@@ -28,7 +28,7 @@ class Welcome extends Application
 	public function index() {
 		$this->load->helper('formfields');
 		$this->data['title'] = 'Atrexa Bar (Server)';
-		$this->data['pagebody'] = 'Welcome to Atrexa Bar'
+		$this->data['pagebody'] = 'Welcome to Atrexa Bar';
 
 		$this->render();
 	}
