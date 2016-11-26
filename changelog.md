@@ -3,6 +3,11 @@
 > For developers:
 > Please write the latest log on top
 
+### Version 1.0.0
+1. Seperate the front end and backend.
+2. Add RESTful service(third party)
+3. Set up back end UI
+
 ### Version 0.0.8
 1. Make shopping "alive", add and cancel orders.
 2. Present the order summary.
