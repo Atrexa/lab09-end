@@ -3,10 +3,18 @@
 > For developers:
 > Please write the latest log on top
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> 586032b1141adb50d2239d43b57c14d4df746e50
 ### Version 1.0.0
 1. Seperate the front end and backend.
 2. Add RESTful service(third party)
 3. Set up back end UI
+<<<<<<< HEAD
+4. Modify the starter.sql to backend.sql in /data
+=======
+>>>>>>> 586032b1141adb50d2239d43b57c14d4df746e50
 
 ### Version 0.0.8
 1. Make shopping "alive", add and cancel orders.
