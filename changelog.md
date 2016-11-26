@@ -3,7 +3,6 @@
 > For developers:
 > Please write the latest log on top
 
-
 ### Version 1.0.0
 1. Seperate the front end and backend.
 2. Add RESTful service(third party)
